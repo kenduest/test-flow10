@@ -1,0 +1,10 @@
+CREATE TABLE GravityLegacySync (
+	Name		VARCHAR(100) PRIMARY KEY, 
+	TimeStamp	DATETIME DEFAULT SYSDATETIME()
+);
+
+GO
+
+INSERT INTO GravityLegacySync(Name,TimeStamp) VALUES('MSGMO','2000-1-1 0:0:0');
+INSERT INTO GravityLegacySync(Name,TimeStamp) VALUES('SI_SINOBACBANKMSGINFO','2000-1-1 0:0:0');
+
